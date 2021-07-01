@@ -53,6 +53,10 @@ async function checkForInvalidArchitecture(platformInformation: PlatformInformat
             }
         }
         else if (platformInformation.architecture !== "x86_64") {
+            if (platformInformation.isWindows() && platformInformation.architecture === "arm64") {
+                return false;
+            }
+            
             if (platformInformation.isWindows() && platformInformation.architecture === "x86") {
                 eventStream.post(new DebuggerPrerequisiteWarning(`[WARNING]: x86 Windows is not currently supported by the .NET Core debugger. Debugging will not be available.`));
             } else {

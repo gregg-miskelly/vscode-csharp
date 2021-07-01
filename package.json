@@ -133,7 +133,8 @@
         "win32"
       ],
       "architectures": [
-        "x86"
+        "x86", 
+        "arm64"
       ],
       "installTestPath": "./.omnisharp/1.37.11/OmniSharp.exe",
       "platformId": "win-x86",
@@ -224,6 +225,21 @@
       ],
       "architectures": [
         "x86_64"
+      ],
+      "installTestPath": "./.debugger/vsdbg-ui.exe",
+      "integrity": "D6B804513BA83E10B1428CEEDD6E2AC4749DC2AAFFD5BE56AEB6FD430C916618"
+    },
+    {
+      "id": "Debugger",
+      "description": ".NET Core Debugger (Windows / arm64)",
+      "url": "https://download.visualstudio.microsoft.com/--replace-me--/coreclr-debug-win10-arm64.zip",
+      "fallbackUrl": "https://vsdebugger.blob.core.windows.net/coreclr-debug--replace-me--/coreclr-debug-win10-arm64.zip",
+      "installPath": ".debugger",
+      "platforms": [
+        "win32"
+      ],
+      "architectures": [
+        "arm64"
       ],
       "installTestPath": "./.debugger/vsdbg-ui.exe",
       "integrity": "D6B804513BA83E10B1428CEEDD6E2AC4749DC2AAFFD5BE56AEB6FD430C916618"
