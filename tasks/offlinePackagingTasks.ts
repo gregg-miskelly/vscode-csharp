@@ -23,7 +23,7 @@ import { getRuntimeDependenciesPackages } from '../src/tools/RuntimeDependencyPa
 import { getAbsolutePathPackagesToInstall } from '../src/packageManager/getAbsolutePathPackagesToInstall';
 import { isValidDownload } from '../src/packageManager/isValidDownload';
 
-gulp.task('vsix:offline:package', async () => {
+gulp.task('vsix:release:package:platform-specific', async () => {
 
     if (process.platform === 'win32') {
         throw new Error('Do not build offline packages on windows. Runtime executables will not be marked executable in *nix packages.');

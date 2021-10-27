@@ -22,7 +22,7 @@ jobs:
           npm i -g gulp
 
     - name: Build extension package
-      run: gulp 'vsix:release:package'
+      run: gulp 'vsix:release:package:platform-specific'
 
     - name: Run release tests
       run: npm run test:release
